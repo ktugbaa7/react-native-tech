@@ -1,6 +1,5 @@
 import { View, Text, TextInput, Button, FlatList, StyleSheet } from 'react-native'
 import React, { useState } from 'react'
-import { StatusBar } from 'expo-status-bar';
 
 const StateSample4 = () => {
 

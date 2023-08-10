@@ -1,4 +1,4 @@
-import { View, Text, FlatList, SafeAreaView, Pressable } from 'react-native'
+import { View, Text, FlatList, Pressable } from 'react-native'
 import React, { useState } from 'react'
 import { categories } from '../components/categories'
 import { Button } from 'react-native'
@@ -30,14 +30,14 @@ const StateSample3 = () => {
     const renderItem = ({item}) => <Pressable onPress={() => deleteCategory(item.id)}><Text style={{fontSize:40}}>{item.name}</Text></Pressable>
 
     return (
-        <SafeAreaView>
+        <View>
              <Text>Length: {categoryList.length}</Text>
             <Button title='Sort by name' onPress={sortByName}></Button>
             <FlatList
                 data={categoryList}
                 renderItem={renderItem}
             />
-        </SafeAreaView>
+        </View>
     )
 }
 
