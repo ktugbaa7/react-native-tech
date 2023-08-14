@@ -2,7 +2,6 @@ import { View,  TextInput, Button, StyleSheet } from 'react-native'
 import React, { useState } from 'react'
 import axios from "axios";
 import { Alert } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
 
 const AddProduct = () => {
     const [name, setname] = useState('');
